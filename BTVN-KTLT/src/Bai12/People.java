@@ -37,5 +37,7 @@ public class People {
         this.setDateOfBirth(new Scanner(System.in).nextLine());
         System.out.println("Giới tính : ");
         this.setSex(new Scanner(System.in).nextLine());
+
+
     }
 }
