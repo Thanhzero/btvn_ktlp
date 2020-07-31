@@ -14,6 +14,7 @@ public class Main {
                 case 1 : printListTeacher(teacherList);break;
                 case 2 : printListStaff(staffList);break;
                 case 3 : return;
+                default: break;
             }
         }
     }

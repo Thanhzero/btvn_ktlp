@@ -24,7 +24,7 @@ public class Main {
         String findName = new Scanner(System.in).nextLine();
         if (_findStudent(studentList,findName) >= 0){
             System.out.println("\t\t\tDANH SÁCH SINH VIÊN");
-            System.out.printf("| %30s | %10s | %5s |\n","Ho tên","Lớp","Tuổi");
+            System.out.printf("| %30s | %10s | %5s | %10s | \n","Ho tên","Lớp","Tuổi","Giới tính");
             studentList.get(_findStudent(studentList,findName)).printStudent();
         }
         else {
@@ -41,7 +41,7 @@ public class Main {
     }
     private static void printList(List<Student> studentList) {
         System.out.println("\t\t\tDANH SÁCH SINH VIÊN");
-        System.out.printf("| %30s | %10s | %5s |\n","Ho tên","Lớp","Tuổi");
+        System.out.printf("| %30s | %10s | %5s | %10s |\n","Ho tên","Lớp","Tuổi","Giới tính");
         for (Student student : studentList) {
             student.printStudent();
         }
